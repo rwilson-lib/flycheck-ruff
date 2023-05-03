@@ -25,9 +25,9 @@ See URL `http://pypi.python.org/pypi/ruff'."
 
 ;; Use something adapted to your config to add `python-ruff' to `flycheck-checkers'
 ;; This is an MVP example:
-(setq python-mode-hook
-      (list (defun my-python-hook ()
-              (unless (bound-and-true-p org-src-mode)
-                (when (buffer-file-name)
-                  (setq-local flycheck-checkers '(python-ruff))
-                  (flycheck-mode))))))
+;; (setq python-mode-hook
+;;       (list (defun my-python-hook ()
+;;               (unless (bound-and-true-p org-src-mode)
+;;                 (when (buffer-file-name)
+;;                   (setq-local flycheck-checkers '(python-ruff))
+;;                   (flycheck-mode))))))
